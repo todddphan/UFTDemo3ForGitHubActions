@@ -1,0 +1,8 @@
+﻿Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("username").Set("thanhdemo") @@ script infofile_;_ZIP::ssf1.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("password").SetSecure("69cc3175914efc857dfb76690f656677d732a6c99bd6b12c43445272") @@ script infofile_;_ZIP::ssf2.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu").Click() @@ script infofile_;_ZIP::ssf3.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("SIGN IN WITH FACEBOOK").Click() @@ script infofile_;_ZIP::ssf4.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu").Click() @@ script infofile_;_ZIP::ssf5.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("sign_in_btn").Click() @@ script infofile_;_ZIP::ssf6.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu_2").Click() @@ script infofile_;_ZIP::ssf7.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("Sign out").Click() @@ script infofile_;_ZIP::ssf8.xml_;_
