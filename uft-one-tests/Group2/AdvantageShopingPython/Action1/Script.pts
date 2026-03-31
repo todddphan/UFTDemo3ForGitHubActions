@@ -4,5 +4,18 @@ Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu").Click(
 Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("SIGN IN WITH FACEBOOK").Click() @@ script infofile_;_ZIP::ssf4.xml_;_
 Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu").Click() @@ script infofile_;_ZIP::ssf5.xml_;_
 Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("sign_in_btn").Click() @@ script infofile_;_ZIP::ssf6.xml_;_
-Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu_2").Click() @@ script infofile_;_ZIP::ssf7.xml_;_
-Browser("Advantage Shopping").Page("Advantage Shopping").Link("Sign out").Click() @@ script infofile_;_ZIP::ssf8.xml_;_
+#Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu_2").Click() @@ script infofile_;_ZIP::ssf7.xml_;_
+#Browser("Advantage Shopping").Page("Advantage Shopping").Link("Sign out").Click() @@ script infofile_;_ZIP::ssf8.xml_;_
+
+Browser("Advantage Shopping").Sync()
+
+page = Browser("Advantage Shopping").Page("Advantage Shopping")
+
+# Open user menu
+page.Link("UserMenu_2").Click()
+
+# Login verification
+if page.Link("Sign out").Exist(5):
+    Reporter.ReportEvent("Pass", "Login Verification", "Login successful")
+else:
+    Reporter.ReportEvent("Fail", "Login Verification", "Login failed")
